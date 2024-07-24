@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+.flex {
+    width: 70vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.flex:hover {
+    background-color: rgb(255, 255, 255, .1);
+}
+
+#item1 {
+    color: rgb(150, 150, 150);
+    font-size: 14px;
+    text-align: center;
+    width: 36px;
+}
+
+#item2 {
+    display: flex;
+    justify-content: start;
+    width: 95%;
+    cursor: pointer;
+}
+
+.timeline p {
+    width: max-content;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.60);
+    padding: 3px 4px;
+    border-radius: 5px;
+    top: 85px;
+    left: 155px;
+    color: white;
+}
+
+.thumbnail {
+    display: grid;
+    width: max-content;
+    margin-right: 15px;
+}
+
+.timeline,
+.thumbnail img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.thumbnail img {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.details {
+    display: inline-block;
+}
+
+.title {
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+    text-wrap: wrap;
+    margin: 10px 0px;
+    max-height: 44px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.vd-child,
+.vd-child a {
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
+#item3 img {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+button:hover{
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
